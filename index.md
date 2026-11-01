@@ -1,7 +1,7 @@
 ---
 title: '{{< var course.title >}}'
 subtitle: "PHI {{< var course.number >}} ({{< var course.term >}} {{< var course.year >}})"
-image: media/Minujín,_Marta-_La_invasión_de_la_mente-_1984.jpg
+image: media/Minujin_Marta-_La_invasion_de_la_mente-_1984.jpg
 image-alt: "A neo-classical human bust divided into several slices, as though it has lost its unity."
 image-title: "Marta Minujín, La invasión de la mente"
 image-url: https://artsandculture.google.com/asset/la-invasión-de-la-mente-marta-minujín/8wFkVEjRsyrknA
