@@ -1,0 +1,97 @@
+project:
+  title: "PHI 251" # resolving variables does not work here. Do it by hand.
+  type: website
+  pre-render:
+    - scripts/generate-references.sh
+
+website:
+  title: "PHI 251" # resolving variables does not work here. Do it by hand.
+  description: "Course webpage for PHI {{< var course.number >}} at Illinois State, {{< var course.term >}} {{< var course.year >}}"
+  site-url: "https://www.davidsanson.com/251s2027" # resolving variables does not work here. Do it by hand.
+  repo-url: "https://github.com/dsanson/251s2027" # resolving variables does not work here. Do it by hand.
+
+  repo-actions: [source, issue]
+  favicon: media/favicon-generated.svg
+  twitter-card: true
+  open-graph: true
+  page-footer: |
+    © {{< var course.year >}} David Sanson. Created using [Quarto](https://quarto.org/).
+  navbar:
+    logo: media/favicon-generated.svg
+    logo-alt: 'PHI'
+    left:
+      - href: index.md
+        text: Home
+      - href: syllabus.md
+        text: Syllabus
+      - href: schedule.md
+        text: Schedule
+  announcement:
+    icon: info-circle
+    type: danger
+    content: |
+      **Alert**: This is a draft course website. Most of what here is just a placeholder. Everything is subject to change.
+    position: above-navbar
+
+bibliography: [references.json]
+citeproc: true
+filters:
+  - filters/label-bullets.lua
+  - filters/replace-svg.lua
+
+metadata:
+  author:
+  - name: David Sanson
+    orcid: 0009-0002-4562-5090
+    email: desanso@ilstu.edu
+    url: "https://www.davidsanson.com"
+    affiliations:
+      name: Illinois State University
+
+callout-appearance: minimal
+
+format:
+  html:
+    axe: true
+    toc: true
+    respect-user-color-scheme: true
+    template-partials:
+      - templates/title-metadata.html
+    theme:
+      light: 
+        - flatly
+        - styles/theme-light.scss
+        - styles/custom.scss
+      dark: 
+        - darkly
+        - styles/custom.scss
+    link-external-icon: true
+    link-external-newwindow: true
+    citations-hover: true
+    footnotes-hover: true
+
+    format-links:
+    - html
+    - format: typst
+      icon: file-pdf
+      text: PDF
+        
+    include-in-header:
+      text: |
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
+
+  typst:
+    pdf-standard: ua-1
+    citeproc: true
+    filters:
+      - filters/math-alt.lua
+      - filters/label-bullets.lua
+    template-partials:
+    - templates/typst-template.typ
+    fontsize: 10pt
+    # mainfont: "libertinus serif"
+    # sansfont: "liberation sans"
+    margin:
+      x: 1in
+      y: 1in
+    papersize: us-letter

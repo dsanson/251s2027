@@ -1,0 +1,7 @@
+/.quarto/
+**/*.quarto_ipynb
+_plan
+_site
+*-generated.svg
+media/apple-touch-icon.png
+media/favicon.png
