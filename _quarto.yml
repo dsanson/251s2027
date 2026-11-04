@@ -1,21 +1,21 @@
 project:
-  title: "PHI 251" # resolving variables does not work here. Do it by hand.
+  title: "PHI 251" 
   type: website
   pre-render:
     - scripts/generate-references.sh
 
 website:
-  title: "PHI 251" # resolving variables does not work here. Do it by hand.
-  description: "Course webpage for PHI {{< var course.number >}} at Illinois State, {{< var course.term >}} {{< var course.year >}}"
-  site-url: "https://www.davidsanson.com/251s2027" # resolving variables does not work here. Do it by hand.
-  repo-url: "https://github.com/dsanson/251s2027" # resolving variables does not work here. Do it by hand.
+  title: "PHI 251"
+  description: "Course webpage for PHI {{< meta course.number >}} at Illinois State, {{< meta course.term >}} {{< meta course.year >}}"
+  site-url: "https://www.davidsanson.com/251s2027"
+  repo-url: "https://github.com/dsanson/251s2027"
 
   repo-actions: [source, issue]
   favicon: media/favicon-generated.svg
   twitter-card: true
   open-graph: true
   page-footer: |
-    © {{< var course.year >}} David Sanson. Created using [Quarto](https://quarto.org/).
+    © {{< meta course.year >}} David Sanson. Created using [Quarto](https://quarto.org/).
   navbar:
     logo: media/favicon-generated.svg
     logo-alt: 'PHI'
@@ -30,14 +30,8 @@ website:
     icon: info-circle
     type: danger
     content: |
-      **Alert**: This is a draft course website. Most of what here is just a placeholder. Everything is subject to change.
+      **Alert**: This is a draft course website produced from a template.
     position: above-navbar
-
-bibliography: [references.json]
-citeproc: true
-filters:
-  - filters/label-bullets.lua
-  - filters/replace-svg.lua
 
 metadata:
   author:
@@ -47,8 +41,40 @@ metadata:
     url: "https://www.davidsanson.com"
     affiliations:
       name: Illinois State University
+  course:
+    number: 251
+    catalog-title: "Visions of the Self"
+    title: "Self, Self-Awareness, Self-Conception"
+    term: Spring
+    shortterm: s
+    year: 2027
+    instructor:
+      name: David Sanson
+      url: "https://www.davidsanson.com"
+      office: Stevenson 341
+    institution: Illinois State University
+    url: "https://www.davidsanson.com/251s2027"
+    meeting:
+      - time: MW 3:35--4:50pm
+        place: Stevenson 230
+      - time: MW 5:00--6:15pm
+        place: Stevenson 230
+    office-hours:
+      time: "M noon--1:00PM; W 11:00AM--noon"
+      place: Stevenson 341
+    short-description: null
+    prerequisites: "none."
+    description: |
+      Know thyself: this was the maxim inscribed on the temple of Apollo in Delphi, in Ancient Greece, and it is 
+      also the goal of this class. We will explore a range of philosphical positions on the nature of the self, the 
+      ways in which the self is aware of itself, and the relation between the self and how it thinks about itself.
 
 callout-appearance: minimal
+bibliography: [references.json]
+citeproc: true
+filters:
+  - filters/label-bullets.lua
+  - filters/replace-svg.lua
 
 format:
   html:

@@ -1,9 +1,9 @@
 ---
-title: '{{< var course.title >}}'
-subtitle: "PHI {{< var course.number >}} ({{< var course.term >}} {{< var course.year >}})"
-image: media/Minujin_Marta-_La_invasion_de_la_mente-_1984.jpg
-image-alt: "A neo-classical human bust divided into several slices, as though it has lost its unity."
-image-title: "Marta Minujín, La invasión de la mente"
+title: '{{< meta course.title >}}'
+subtitle: "PHI {{< meta course.number >}} ({{< meta course.term >}} {{< meta course.year >}})"
+image: media/minujin-marta-la-invasion-de-la-mente-1984.jpg
+image-alt: "A scupltural bust coming apart into vertical slices"
+image-title: "Marta Minujín, La Invasión de la Mente (1984)"
 image-url: https://artsandculture.google.com/asset/la-invasión-de-la-mente-marta-minujín/8wFkVEjRsyrknA
 format:
   html:
@@ -50,18 +50,17 @@ See the [syllabus](syllabus.md) for more details about the course topic and cour
 I am teaching two sections of this course. Attend the section for which you are enrolled.
 
 Class Meetings
-:  {{< var course.meeting.1.time >}}, {{< var course.meeting.1.place >}}.
-:  {{< var course.meeting.2.time >}}, {{< var course.meeting.2.place >}}.
+:  {{< meta course.meeting.1.time >}}, {{< meta course.meeting.1.place >}}.
+:  {{< meta course.meeting.2.time >}}, {{< meta course.meeting.2.place >}}.
 
 Office Hours
-:   {{< var course.office-hours.time >}}, {{< var course.office-hours.place >}}
-
+:   {{< meta course.office-hours.time >}}, {{< meta course.office-hours.place >}}
 
 :::
 
 ::: {#second-column} 
 
-![[{{< meta image-title >}}]({{< meta image-url >}}){style="color: hsl(0,0%,40%); font-size: .9rem; text-align: center;"}]({{< meta image >}}){alt="{{< meta image-alt >}}" .lightbox style="border-radius:1em"}
+![[{{< meta image-title >}}]({{< meta image-url >}}){style="color: hsl(0,0%,40%); font-size: .9rem; text-align: center;"}]({{< meta image >}}){alt="{{< meta image-alt >}}" .lightbox }
 
 :::
 

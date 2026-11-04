@@ -28,7 +28,7 @@ jobs:
         run: |
           quarto install extension --no-prompt pandoc-ext/diagram
 
-      - name: Install verapdg
+      - name: Install verapdf
         run: |
           quarto install verapdf --no-prompt
 
