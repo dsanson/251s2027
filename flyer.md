@@ -15,6 +15,8 @@ format:
       - templates/flyer/typst-show.typ
     filters: []
     mainfont: "Libertinus Sans"
+    font-paths: 
+      - fonts
 ---
 
 -   self, soul, mind, body, human animal, person
