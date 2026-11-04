@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.davidsanson.com/251s2027/guides/example.html</loc>
-    <lastmod>2026-11-04T05:23:17.866Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.davidsanson.com/251s2027/slides/example.html</loc>
-    <lastmod>2026-11-04T05:23:17.873Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.davidsanson.com/251s2027/403.html</loc>
-    <lastmod>2026-11-04T05:23:17.851Z</lastmod>
+    <lastmod>2026-11-04T05:29:42.804Z</lastmod>
   </url>
   <url>
     <loc>https://www.davidsanson.com/251s2027/syllabus.html</loc>
-    <lastmod>2026-11-04T05:23:17.873Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.davidsanson.com/251s2027/schedule.html</loc>
-    <lastmod>2026-11-04T05:23:17.871Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.davidsanson.com/251s2027/handouts/example.html</loc>
-    <lastmod>2026-11-04T05:23:17.867Z</lastmod>
+    <lastmod>2026-11-04T05:29:42.822Z</lastmod>
   </url>
   <url>
     <loc>https://www.davidsanson.com/251s2027/index.html</loc>
-    <lastmod>2026-11-04T05:23:17.867Z</lastmod>
+    <lastmod>2026-11-04T05:29:42.817Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.davidsanson.com/251s2027/schedule.html</loc>
+    <lastmod>2026-11-04T05:29:42.821Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.davidsanson.com/251s2027/guides/example.html</loc>
+    <lastmod>2026-11-04T05:29:42.817Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.davidsanson.com/251s2027/slides/example.html</loc>
+    <lastmod>2026-11-04T05:29:42.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.davidsanson.com/251s2027/handouts/example.html</loc>
+    <lastmod>2026-11-04T05:29:42.817Z</lastmod>
   </url>
 </urlset>
